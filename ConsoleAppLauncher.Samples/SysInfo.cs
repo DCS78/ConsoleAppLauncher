@@ -5,24 +5,31 @@ namespace SlavaGu.ConsoleAppLauncher.Samples
 {
     public class SysInfo
     {
-        /// <summary>
-        /// Run simplest shell command and return its output.
-        /// </summary>
+        #region Public Methods
+
+        /// <summary>Get Windows firewall rule</summary>
+        /// <param name="ruleName"></param>
         /// <returns></returns>
-        public static string GetWindowsVersion()
+        public static string GetFirewallRule(string ruleName)
         {
-            return ConsoleApp.Run("cmd", "/c ver").Output.Trim();
+            var cmdLine = string.Format("advfirewall firewall show rule \"{0}\" verbose", ruleName);
+            return ConsoleApp.Run("netsh", cmdLine).Output.Trim();
         }
 
-        /// <summary>
-        /// Run ipconfig.exe and return matching line.
-        /// </summary>
+        /// <summary>Run ipconfig.exe and return matching line.</summary>
         /// <returns></returns>
         public static string GetIpAddress()
         {
             var output = ConsoleApp.Run("ipconfig").Output;
             var match = Regex.Match(output, "IPv4 Address.*: (?<addr>.*)");
             return match.Success ? match.Groups["addr"].Value : "<undefined>";
+        }
+
+        /// <summary>Run simplest shell command and return its output.</summary>
+        /// <returns></returns>
+        public static string GetWindowsVersion()
+        {
+            return ConsoleApp.Run("cmd", "/c ver").Output.Trim();
         }
 
         /// <summary>
@@ -46,15 +53,6 @@ namespace SlavaGu.ConsoleAppLauncher.Samples
             app.Run();
         }
 
-        /// <summary>
-        /// Get Windows firewall rule
-        /// </summary>
-        /// <param name="ruleName"></param>
-        /// <returns></returns>
-        public static string GetFirewallRule(string ruleName)
-        {
-            var cmdLine = string.Format("advfirewall firewall show rule \"{0}\" verbose", ruleName);
-            return ConsoleApp.Run("netsh", cmdLine).Output.Trim();
-        }
+        #endregion Public Methods
     }
 }

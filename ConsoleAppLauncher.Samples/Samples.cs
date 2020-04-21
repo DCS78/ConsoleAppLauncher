@@ -5,15 +5,16 @@ namespace SlavaGu.ConsoleAppLauncher.Samples
 {
     public partial class Form1 : Form
     {
+        #region Public Constructors
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void buttonVer_Click(object sender, EventArgs e)
-        {
-            labelVer.Text = SysInfo.GetWindowsVersion();
-        }
+        #endregion Public Constructors
+
+        #region Private Methods
 
         private void buttonGetIpAddress_Click(object sender, EventArgs e)
         {
@@ -30,5 +31,11 @@ namespace SlavaGu.ConsoleAppLauncher.Samples
             labelSkype.Text = SysInfo.GetFirewallRule("Skype");
         }
 
+        private void buttonVer_Click(object sender, EventArgs e)
+        {
+            labelVer.Text = SysInfo.GetWindowsVersion();
+        }
+
+        #endregion Private Methods
     }
 }

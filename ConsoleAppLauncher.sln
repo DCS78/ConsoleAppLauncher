@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30014.187
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppLauncher", "ConsoleAppLauncher\ConsoleAppLauncher.csproj", "{92D1E382-4A58-4458-9DFF-43E6C504FA0F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppLauncher.Tests", "ConsoleAppLauncher.Tests\ConsoleAppLauncher.Tests.csproj", "{2C4C68E7-CAFF-45FF-81E0-998724E63E78}"
@@ -29,15 +31,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppLauncher.Samples", "ConsoleAppLauncher.Samples\ConsoleAppLauncher.Samples.csproj", "{E752D3D4-9A35-404F-9A03-308115D93A11}"
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = ConsoleAppLauncher.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
 		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
@@ -45,44 +46,66 @@ Global
 		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Debug|x64.ActiveCfg = Debug|x64
+		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Debug|x64.Build.0 = Debug|x64
 		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Release|x64.ActiveCfg = Release|x64
+		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Release|x64.Build.0 = Release|x64
 		{92D1E382-4A58-4458-9DFF-43E6C504FA0F}.Release|x86.ActiveCfg = Release|Any CPU
 		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Debug|x64.ActiveCfg = Debug|x64
+		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Debug|x64.Build.0 = Debug|x64
 		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Release|x64.ActiveCfg = Release|x64
+		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Release|x64.Build.0 = Release|x64
 		{2C4C68E7-CAFF-45FF-81E0-998724E63E78}.Release|x86.ActiveCfg = Release|Any CPU
 		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Debug|x64.ActiveCfg = Debug|x64
+		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Debug|x64.Build.0 = Debug|x64
 		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Debug|x86.ActiveCfg = Debug|x86
 		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Debug|x86.Build.0 = Debug|x86
 		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Release|Any CPU.ActiveCfg = Release|x86
 		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Release|x64.ActiveCfg = Release|x64
+		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Release|x64.Build.0 = Release|x64
 		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Release|x86.ActiveCfg = Release|x86
 		{D4694E4B-E8C9-42BA-9566-70CA8BE11F58}.Release|x86.Build.0 = Release|x86
 		{E752D3D4-9A35-404F-9A03-308115D93A11}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{E752D3D4-9A35-404F-9A03-308115D93A11}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{E752D3D4-9A35-404F-9A03-308115D93A11}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E752D3D4-9A35-404F-9A03-308115D93A11}.Debug|x64.ActiveCfg = Debug|x64
+		{E752D3D4-9A35-404F-9A03-308115D93A11}.Debug|x64.Build.0 = Debug|x64
 		{E752D3D4-9A35-404F-9A03-308115D93A11}.Debug|x86.ActiveCfg = Debug|x86
 		{E752D3D4-9A35-404F-9A03-308115D93A11}.Debug|x86.Build.0 = Debug|x86
 		{E752D3D4-9A35-404F-9A03-308115D93A11}.Release|Any CPU.ActiveCfg = Release|x86
 		{E752D3D4-9A35-404F-9A03-308115D93A11}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{E752D3D4-9A35-404F-9A03-308115D93A11}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E752D3D4-9A35-404F-9A03-308115D93A11}.Release|x64.ActiveCfg = Release|x64
+		{E752D3D4-9A35-404F-9A03-308115D93A11}.Release|x64.Build.0 = Release|x64
 		{E752D3D4-9A35-404F-9A03-308115D93A11}.Release|x86.ActiveCfg = Release|x86
 		{E752D3D4-9A35-404F-9A03-308115D93A11}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D56EE6D5-0CDC-4B21-A9DD-A8869885E07A}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ConsoleAppLauncher.vsmdi
 	EndGlobalSection
 EndGlobal

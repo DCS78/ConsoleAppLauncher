@@ -1,12 +1,14 @@
-﻿using System;
+﻿using NDesk.Options;
+using System;
 using System.Globalization;
 using System.Threading;
-using NDesk.Options;
 
 namespace DummyConsoleApplication
 {
     public class Program
     {
+        #region Public Enums
+
         public enum ExitCode
         {
             Success = 0,
@@ -15,7 +17,11 @@ namespace DummyConsoleApplication
             Unexpected = 3,
         }
 
-        static void Main(string[] args)
+        #endregion Public Enums
+
+        #region Private Methods
+
+        private static void Main(string[] args)
         {
             string outputLine = null;
             int repeat = 10;
@@ -95,5 +101,6 @@ namespace DummyConsoleApplication
             Environment.Exit((int)ExitCode.Success);
         }
 
+        #endregion Private Methods
     }
 }

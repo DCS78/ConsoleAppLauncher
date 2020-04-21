@@ -1,21 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using SlavaGu.ConsoleAppLauncher.Samples;
+using System;
 using System.Windows.Forms;
-using SlavaGu.ConsoleAppLauncher.Samples;
 
 namespace ConsoleAppLauncher.Samples
 {
-    static class Program
+    internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        #region Private Methods
+
+        /// <summary>The main entry point for the application.</summary>
         [STAThread]
-        static void Main()
+        private static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+
+        #endregion Private Methods
     }
 }
